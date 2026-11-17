@@ -1,4 +1,4 @@
-/* 1. Стилізація текстової частини та фону вебсторінки (Варіант 8) */
+/* Базова стилізація сторінки із завдання 2 */
 body {
     background-color: lightblue;
     font-family: Roboto, sans-serif;
@@ -6,14 +6,70 @@ body {
     font-weight: bold;
     color: orange;
     text-align: right;
+    margin: 0;
 }
 
+/* 4) Градієнтні подання (Header та Footer) */
+header {
+    background: linear-gradient(90deg, #003366, #0077cc);
+    padding: 20px;
+}
+
+footer {
+    background: linear-gradient(90deg, #0077cc, #003366);
+    padding: 15px;
+    color: white;
+}
+
+/* 1) Позиціонування (властивість position) */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #004488;
+    padding: 10px;
+    z-index: 10;
+}
+
+main {
+    position: relative;
+    padding: 20px;
+    /* 5) Позиціонування фонового зображення */
+    background-image: url('iot-root.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 250px;
+}
+
+/* 2) Стилізація кнопок навігації з іконками */
+nav button {
+    background-color: white;
+    color: darkblue;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid blue;
+    border-radius: 8px;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+nav button svg {
+    vertical-align: middle;
+}
+
+/* 3) Тіні для обраного тексту */
+h1, h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Оформлення текстового блоку із завдання 2 */
 .text-block {
     border: 35px double blue;
     border-radius: 20px;
+    padding: 15px;
 }
 
-/* 2. Стилізація 2 тематичних фото (Варіант 8) */
+/* Стилізація зображень із завдання 2 */
 .img-first {
     width: 300px;
     height: 300px;
@@ -33,7 +89,7 @@ body {
     transform: scale(1.1);
 }
 
-/* 3. Стилізація зовнішніх посилань та зображення-посилання */
+/* Стилізація посилань із завдання 2 */
 a.external-link {
     color: darkblue;
     font-size: 20px;
