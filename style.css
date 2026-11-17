@@ -1,0 +1,59 @@
+/* 1. Стилізація текстової частини та фону вебсторінки (Варіант 8) */
+body {
+    background-color: lightblue;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: orange;
+    text-align: right;
+}
+
+.text-block {
+    border: 35px double blue;
+    border-radius: 20px;
+}
+
+/* 2. Стилізація 2 тематичних фото (Варіант 8) */
+.img-first {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid yellow;
+}
+
+.img-second {
+    width: 30%;
+    height: auto;
+    border: 3px dashed blue;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.img-second:hover {
+    transform: scale(1.1);
+}
+
+/* 3. Стилізація зовнішніх посилань та зображення-посилання */
+a.external-link {
+    color: darkblue;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+a.external-link:hover {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+a.img-link img {
+    border: 4px solid blue;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+a.img-link:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
